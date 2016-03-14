@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Code';
+  src: url('../fonts/OfficeCodePro-Regular.eot');
+  src: url('../fonts/OfficeCodePro-Regular.woff2') format('woff2'),
+       url('../fonts/OfficeCodePro-Regular.woff') format('woff'),
+       url('../fonts/OfficeCodePro-Regular.otf') format('otf'),
+       url('../fonts/OfficeCodePro-Regular.ttf')  format('truetype');
+}
+body{
+  height: 2000px;
+}
+p, a{
+  font-family: 'Code';
+  font-size: 12px;
+}
+h1{
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+}
+.header-container{
+  width: 100%;
+  position: fixed;
+}
+.header{
+  z-index: 100;
+  height: auto;
+  width: 100%;
+  padding: 30px 50px;
+  background-color: #fff;
+}
+.header-center{
+  width: 200px;
+  margin: 3px auto 0 auto;
+}
+.header-left{
+  float: left;
+}
+.header-right{
+  float: right;
+}
+
+
+.header-quota{
+  text-align: center;
+  margin-top: -10px;
+}
+.header-profile{
+  display: inline-block;
+  margin: 0 60px 0 0;
+  text-align: right;
+  width: 95px;
+}
+.header-menu{
+  float: right;
+  text-align: right;
+}
+.progress{
+  width: 50%;
+  height: 2px;
+  background-color: #FF0026;
+}
+.profile-circle{
+  border-radius: 50%;
+  background-color: #8C82D3;
+  height: 8px;
+  width: 8px;
+  display: inline-block;
+  float: left;
+  margin-top: 4px;
+}

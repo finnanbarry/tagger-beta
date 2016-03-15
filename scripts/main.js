@@ -20,11 +20,22 @@ function replaceR(boo){
 function noteGet() {
   var achieve = document.getElementById('test-achieve');
   achieve.style.right = '0';
+  setTimeout(function(){
+    achieve.style.opacity = '0.4';
+  }, 3000);
 }
 
 
 
 $(document).ready(function(){
+
+  $('.achievement').mouseover(function(){
+    $(this).css('opacity', '1');
+  });
+
+  $('.achievement').mouseleave(function(){
+    $(this).css('opacity', '0.4');
+  });
 
   $('.test-score-button-add').click(function(){
     replaceR(true);
@@ -37,7 +48,7 @@ $(document).ready(function(){
   });
 
   $('.note-close').click(function(){
-    $(this).parent().parent().fadeOut(200);
+    $(this).parent().parent().fadeOut(400);
   });
 
 });

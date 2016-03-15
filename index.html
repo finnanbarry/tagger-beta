@@ -37,19 +37,19 @@
         <div class="header-center">
           <div class="header-quota">
             <p>Daily Quota</p>
-            <p><span>17</span> / 25</p>
+            <p><span id="quota">0</span> / 25</p>
           </div>
         </div>
       </div>
 
-        <div class="progress"></div>
+        <div id="progress"></div>
     </div>
 
     <div class="container">
+      <div class="content-number">
+          <p>#0042</p>
+      </div>
       <div class="content-box">
-        <div class="content-number">
-            <p>#0042</p>
-        </div>
         <div class="content-box-inner">
           <div class="context-subject">
             <p>Does this description accurately describe the photo?</p>
@@ -61,15 +61,75 @@
             <h1>Statue of two figures in European town surrounded by bicycles on a bridge.</h1>
           </div>
           <div class="context-yesno">
+            <div class="radio-box">
+              <input type="radio" id="radio01" name="radio" />
+              <label for="radio01"><span></span><br/>Yes</label>
+            </div>
 
+            <div>
+             <input type="radio" id="radio02" name="radio" />
+             <label for="radio02"><span></span><br/>No</label>
+            </div>
           </div>
           <div class="context-submit">
-            
+
           </div>
         </div>
       </div>
     </div>
 
+    <div class="note-box">
+      <div class="achievement" id="test-achieve">
+        <div class="note-top">
+          <p>You unlocked an <a href="http://www.google.com">Achievement</a>!</p>
+          <a class="note-close" href="#">&#215;</a>
+        </div>
+        <div class="note-bottom-box">
+          <div class="note-title">
+            <p>Like-minded</p>
+            <img src="imgs/achievements/eye.png" />
+          </div>
+          <div class="note-description">
+            <p>Enter the same description as another user.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="achievement">
+        <div class="note-top">
+          <p>You unlocked an <a href="http://www.google.com">Achievement</a>!</p>
+          <a class="note-close" href="#">&#215;</a>
+        </div>
+        <div class="note-bottom-box">
+          <div class="note-title">
+            <p>Gold Scribe</p>
+            <img src="imgs/achievements/pencil.png" />
+          </div>
+          <div class="note-description">
+            <p>Describe 300 images.</p>
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+
+    <div class="test-enviroment">
+      <p style="text-transform: uppercase;">Testing Box</p>
+      <div class="test-box">
+        <p>Progress Bar</p>
+        <div class="test-score-button-add">
+          <p>+</p>
+        </div>
+        <div class="test-score-button-sub">
+          <p>-</p>
+        </div>
+      </div>
+
+      <div class="test-achievement-button" onclick="noteGet()">
+        <p>Achievement Get</p>
+      </div>
+
+    </div>
 
 </body>
 </html>

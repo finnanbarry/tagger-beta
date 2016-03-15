@@ -14,17 +14,27 @@
 body{
   height: 2000px;
 }
-p, a{
+p, a, label, input{
   font-family: 'Code';
   font-size: 12px;
+}
+a{
+  color: #FF0026;
+  text-decoration: underline;
+}
+a:hover{
+  text-decoration: none;
 }
 h1{
   font-family: Arial, sans-serif;
   font-weight: normal;
+  font-size: 30px;
 }
 .header-container{
   width: 100%;
   position: fixed;
+  z-index: 100;
+  top: 0;
 }
 .header{
   z-index: 100;
@@ -43,8 +53,6 @@ h1{
 .header-right{
   float: right;
 }
-
-
 .header-quota{
   text-align: center;
   margin-top: -10px;
@@ -59,10 +67,11 @@ h1{
   float: right;
   text-align: right;
 }
-.progress{
-  width: 50%;
+#progress{
+  width: 0%;
   height: 2px;
   background-color: #FF0026;
+  transition: .3s;
 }
 .profile-circle{
   border-radius: 50%;
@@ -72,4 +81,184 @@ h1{
   display: inline-block;
   float: left;
   margin-top: 4px;
+}
+
+.container{
+  width: 700px;
+  margin: 0 auto;
+  position: relative;
+  top: 210px;
+}
+.content-box{
+  width: 540px;
+  margin: 0 auto;
+}
+.content-number{
+  display: inline-block;
+  float: left;
+}
+.context-subject{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.context-image{
+  margin: 0 auto;
+}
+.context-image img{
+  margin: 0 auto;
+  display: block;
+  max-width: 395px;
+  max-height: 500px;
+}
+.context-subject{
+  margin-top: 30px;
+}
+
+
+
+
+.context-yesno{
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.radio-box{
+
+}
+
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"] + label {
+  color: #292321;
+  font-family: 'Code', sans-serif;
+}
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+input[type="radio"] + label span {
+  border: 1px solid #000;
+}
+input[type="radio"]:checked + label span {
+  background-color: #FF0026;
+}
+input[type="radio"] + label span,
+input[type="radio"]:checked + label span {
+  -webkit-transition: background-color 0.4s linear;
+  -o-transition: background-color 0.4s linear;
+  -moz-transition: background-color 0.4s linear;
+  transition: background-color 0.4s linear;
+}
+
+
+
+
+
+
+
+.note-box{
+  width: 280px;
+  height: 200px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+.achievement{
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  transition: 0.1s;
+  width: 280px;
+}
+.achievement:hover{
+  opacity: 1;
+}
+.note-bottom-box{
+  margin: 35px 0 0 0;
+}
+.note-close{
+  display: inline-block;
+  float: right;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  margin: -3px -4px 0px 0px;
+  padding: 2px 5px;
+  cursor: pointer;
+}
+.note-top p{
+  max-width: 210px;
+  display: inline-block;
+}
+.note-title p{
+  font-size: 28px;
+  max-width: 185px;
+  display: inline-block;
+}
+.note-title img{
+  margin-left: 8px;
+  margin-bottom: -3px;
+}
+.note-description{
+  margin: 10px 0 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+.achievement{
+  right: -335px;
+  transition: right 0.3s ease-out;
+}
+.test-enviroment{
+  height: 160px;
+  width: 150px;
+  padding: 8px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  border: 1px solid #000;
+}
+.test-enviroment p:first-child{
+  margin-bottom: 10px;
+}
+.test-box{
+  height: 75px;
+}
+.test-score-button-sub{
+  margin-left: 10px;
+}
+.test-score-button-add, .test-score-button-sub{
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  text-align: center;
+  display: inline-block;
+  float: left;
+}
+.test-score-button-add:active, .test-score-button-sub:active, .test-achievement-button:active{
+  background-color: #000;
+}
+.test-score-button-add p, .test-score-button-sub p{
+  font-size: 26px;
+}
+.test-achievement-button {
+  padding: 10px 10px 2px 10px;
+  border: 1px solid #000;
 }
